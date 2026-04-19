@@ -1,0 +1,194 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b1220;
+    color: #e8ecf3;
+    font-family: Inter, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app-shell {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, rgba(99, 102, 241, 0.18), transparent 30%),
+        radial-gradient(circle at top right, rgba(236, 72, 153, 0.12), transparent 25%),
+        linear-gradient(180deg, #0b1220 0%, #0f172a 100%);
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(12px);
+    background: rgba(11, 18, 32, 0.72);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.topbar-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nav-link {
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.2s ease;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.11);
+    transform: translateY(-1px);
+}
+
+.content-shell {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 28px 24px 40px 24px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.page-subtitle {
+    margin: 0;
+    color: #b8c1d1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.hero-card,
+.graph-card,
+.stat-card,
+.home-card,
+.not-found-card {
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+}
+
+.hero-card,
+.home-card,
+.not-found-card {
+    padding: 24px;
+}
+
+.graph-card {
+    padding: 18px;
+}
+
+.graph-card-large {
+    padding: 14px;
+}
+
+.main-graph {
+    width: 100%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.stat-card {
+    padding: 20px;
+}
+
+.stat-label {
+    color: #9aa6bc;
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #f8fafc;
+}
+
+.home-title {
+    margin: 0 0 10px 0;
+    font-size: 2.1rem;
+}
+
+.home-text {
+    margin: 0;
+    color: #b8c1d1;
+    line-height: 1.7;
+}
+
+.list-clean {
+    margin: 14px 0 0 0;
+    padding-left: 18px;
+    color: #d6deeb;
+    line-height: 1.7;
+}
+
+.not-found-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.plotly-graph-div {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .topbar-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title,
+    .home-title {
+        font-size: 1.6rem;
+    }
+
+    .content-shell {
+        padding: 20px 14px 28px 14px;
+    }
+}
