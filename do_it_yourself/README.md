@@ -89,13 +89,18 @@ if __name__ == "__main__":
 ![img_11.png](screenshots/img_11.png)
 #### Jak apka już się zbuildowała, to wejdź w settingsy (`Open Settings in Plotly Cloud `)
 #### Następnie otworzy się strona co ma wiele różnych ustawień
+#### Wchodzimy w `"Sharing"`
+![img_1.png](img_1.png)
+#### Możemy tutaj od razu skopiować sobie link do publicznej strony apki
 #### Nas interesuje, aby dać możliwość `Can view` w `Anyone with the link`
 ![img_12.png](screenshots/img_12.png)
 
 ## 14 - Kolega prosi o link
 ![img.png](screenshots/img_13.png)
 #### Jak klikniemy w `View App` to otworzy nam się publiczna strona apki
-#### Możemy teraz skopiować URL ( powineien mieć dużo "krzaków" ) i wysłac komukolwiek
+#### Jakby nie było ( jak na screenie poniżej ), to wracamy się do Step 13 i stamtąd kopiujemy URL
+![img_2.png](img_2.png)
+#### Możemy teraz skopiować URL ( powinien mieć dużo "krzaków" ) i wysłać komukolwiek
 #### Teraz każdy może se w niego wejść i podziwać nasz deploy Dash'a
 
 
