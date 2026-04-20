@@ -28,9 +28,9 @@ pip install "dash[cloud]"
 
 ## Step 4 - wpisz swój własny napis
 
-Otwórz plik `app.py`.
+#### Otwórz plik `app.py`.
 
-Wpisz se swój customowy tekst w linii `7`.
+#### Wpisz ( opcjonalnie ofc ) swój customowy tekst w linii `7`.
 
 ```python
 # 🚀✨🎯👉 TU wpisz swój customowy tekst! 🌟🔥💫💥
@@ -40,13 +40,13 @@ CUSTOM_TEXT = "67"
 ---
 
 ## Step 5 - uruchom aplikację lokalnie
-Upewnij się, że jesteś w directory `Plotly-introduction/do_it_yourself/dash_app` ( to ważne)  
-Następnie uruchom aplikację:
+#### Upewnij się, że jesteś w directory `Plotly-introduction/do_it_yourself/dash_app` ( to ważne)  
+#### Następnie uruchom aplikację:
 ```bash
 python app.py
 ```
 
-Potem otwórz:
+#### Potem otwórz:
 http://127.0.0.1:8050/
 
 ---
