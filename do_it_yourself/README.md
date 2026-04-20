@@ -5,7 +5,6 @@
 ## Step 1 - przejdź do katalogu projektu
 
 ```bash
-
 cd do_it_yourself/dash_app
 ```
 
@@ -14,7 +13,6 @@ cd do_it_yourself/dash_app
 ## Step 2 - zainstaluj zależności projektu
 
 ```bash
-
 pip install -r requirements.txt
 ```
 
@@ -23,7 +21,6 @@ pip install -r requirements.txt
 ## Step 3 - doinstaluj wsparcie dla Plotly Cloud
 
 ```bash
-
 pip install "dash[cloud]"
 ```
 
@@ -43,7 +40,7 @@ CUSTOM_TEXT = "67"
 ---
 
 ## Step 5 - uruchom aplikację lokalnie
-Upewnij się, że jesteś w directory `Plotly-introduction\do_it_yourself`
+Upewnij się, że jesteś w directory `Plotly-introduction/do_it_yourself/dash_app` ( to ważne)  
 Następnie uruchom aplikację:
 ```bash
 python app.py
@@ -58,6 +55,13 @@ http://127.0.0.1:8050/
 
 ![img.png](screenshots/img.png)
 
+#### Jest to widoczone tylko wtedy, gdy apka jest odpalona w `debug mode`
+
+```python
+if __name__ == "__main__":
+    app.run(debug=True, port=8050)
+```
+
 ---
 
 ## Step 7 - Sign In
@@ -68,20 +72,30 @@ http://127.0.0.1:8050/
 
 ## Step 9 - Wybierz email sign in code ( prostsze )
 ![img.png](screenshots/img_6.png)
-I następnie wklej kod co przyszedł na maila
+#### I następnie wklej kod co przyszedł na maila
 
 ## Step 10 - Potwierdź urządzenie
 ![img_1.png](screenshots/img_7.png)
 ![img_3.png](screenshots/img_9.png)
-Na 99.9% straczy po prostu kliknąć `"Confirm"`
+#### Na 99.9% straczy po prostu kliknąć `"Confirm"`
 
 ## Step 11 - Wpisz nazwe swojej apki dash + "Publish App"
 ![img_3.png](screenshots/img_3.png)
 
-## Uwaga
+## Step 12 - Daj chwilę czasu się apce zbuild'ować
+![img_10.png](screenshots/img_10.png)
 
-Jeśli coś nie działa:
-- sprawdź katalog
-- sprawdź czy działa lokalnie
-- sprawdź dash[cloud]
-- sprawdź runtime.txt (python-3.12)
+## Step 13 - Upublicznij apke
+![img_11.png](screenshots/img_11.png)
+#### Jak apka już się zbuildowała, to wejdź w settingsy (`Open Settings in Plotly Cloud `)
+#### Następnie otworzy się strona co ma wiele różnych ustawień
+#### Nas interesuje, aby dać możliwość `Can view` w `Anyone with the link`
+![img_12.png](screenshots/img_12.png)
+
+## 14 - Kolega prosi o link
+![img.png](screenshots/img_13.png)
+#### Jak klikniemy w `View App` to otworzy nam się publiczna strona apki
+#### Możemy teraz skopiować URL ( powineien mieć dużo "krzaków" ) i wysłac komukolwiek
+#### Teraz każdy może se w niego wejść i podziwać nasz deploy Dash'a
+
+
