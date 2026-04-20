@@ -1,7 +1,7 @@
 from dash import Dash, Input, Output, dcc, html
-from endpoints import globe, globe_better, globe_with_css
+from endpoints import globe, globe_better, globe_with_css, tutorial
 
-app = Dash(__name__, suppress_callback_exceptions=True)
+app = Dash(__name__, suppress_callback_exceptions=True) # bo przez kilka endpointów może zacząc krzyczeć
 server = app.server
 
 
@@ -14,7 +14,7 @@ def home_layout():
                 children=[
                     html.H1("Plotly / Dash - globe demo", className="home-title"),
                     html.P(
-                        "To jest główna apka Dash z trzema podstronami. Każda z nich pokazuje inną wersję tej samej mapy świata - od wersji bazowej po bardziej dopracowaną wizualnie.",
+                        "To jest główna aplikacja Dash z czterema podstronami. Trzy z nich pokazują kolejne wersje wizualizacji mapy świata - od podstawowej po bardziej dopracowaną. Czwarta prowadzi do tutoriala, gdzie możesz stworzyć i zdeployować własną apke Dash.",
                         className="home-text",
                     ),
                     html.Ul(
@@ -23,6 +23,7 @@ def home_layout():
                             html.Li("'/globe' - wersja bazowa"),
                             html.Li("'/globe-better' - poprawione marginesy i proporcje"),
                             html.Li("'/globe-with-css' - wersja stylowana"),
+                            html.Li("'/do-it-yourself' - mini tutorial do własnego deployu"),
                         ],
                     ),
                 ],
@@ -64,6 +65,7 @@ app.layout = html.Div(
                                 dcc.Link("Globe", href="/globe", className="nav-link"),
                                 dcc.Link("Globe Better", href="/globe-better", className="nav-link"),
                                 dcc.Link("Globe With CSS", href="/globe-with-css", className="nav-link"),
+                                dcc.Link("Do It Yourself", href="/do-it-yourself", className="nav-link"),
                             ],
                         ),
                     ],
@@ -91,6 +93,9 @@ def render_page(pathname):
 
     if pathname == "/globe-with-css":
         return globe_with_css.layout()
+
+    if pathname == "/do-it-yourself":
+        return tutorial.layout()
 
     return not_found_layout(pathname)
 
