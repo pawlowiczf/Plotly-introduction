@@ -21,3 +21,4 @@ Przykładowe dane i narzędzia:
 Amazon Reviews Dataset, Python NLP, Orange, Dash, Tableau.
 
 `pip install datasets pandas numpy tqdm nltk scikit-learn sentence-transformers umap-learn pacmap openTSNE hdbscan plotly matplotlib seaborn vaderSentiment`
+`pip3.12 install datasets<4.0.0`
