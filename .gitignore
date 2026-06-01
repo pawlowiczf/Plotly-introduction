@@ -1,3 +1,4 @@
 .claude/
 .ruff-cache/
 __pycache__/
+plotly-project/data/
