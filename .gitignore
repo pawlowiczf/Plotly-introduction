@@ -2,3 +2,5 @@
 .ruff-cache/
 __pycache__/
 plotly-project/data/
+plotly-project/.venv/
+plotly-project/dim_reduction/results_small/
