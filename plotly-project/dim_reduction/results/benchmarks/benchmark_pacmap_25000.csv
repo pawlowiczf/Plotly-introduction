@@ -1,0 +1,2 @@
+method,n_samples,time_seconds,time_seconds_mean,time_seconds_std,time_seconds_min,time_seconds_max,repeats,timing_mode,warmup_samples,random_state
+pacmap,25000,7.6758,7.6462,0.142,7.4917,7.7711,3,fit-only,1000,none

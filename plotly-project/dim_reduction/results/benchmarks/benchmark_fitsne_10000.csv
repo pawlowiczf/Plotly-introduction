@@ -1,0 +1,2 @@
+method,n_samples,time_seconds,time_seconds_mean,time_seconds_std,time_seconds_min,time_seconds_max,repeats,timing_mode,warmup_samples,random_state
+fitsne,10000,43.4965,42.7808,4.2685,38.1996,46.6462,3,fit-only,1000,none

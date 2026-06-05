@@ -1,0 +1,4 @@
+method,n_samples,repeat,time_seconds,timing_mode,warmup_samples,random_state
+fitsne,25000,1,62.0709,fit-only,1000,none
+fitsne,25000,2,60.6093,fit-only,1000,none
+fitsne,25000,3,62.278,fit-only,1000,none

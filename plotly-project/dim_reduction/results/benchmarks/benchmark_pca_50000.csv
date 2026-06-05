@@ -1,0 +1,2 @@
+method,n_samples,time_seconds,time_seconds_mean,time_seconds_std,time_seconds_min,time_seconds_max,repeats,timing_mode,warmup_samples,random_state
+pca,50000,0.0526,0.0755,0.0399,0.0524,0.1215,3,fit-only,1000,none
