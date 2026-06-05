@@ -1,0 +1,2 @@
+method,n_samples,time_seconds,time_seconds_mean,time_seconds_std,time_seconds_min,time_seconds_max,repeats,timing_mode,warmup_samples,random_state
+umap,5000,2.2794,7.017,8.2336,2.2473,16.5244,3,fit-only,1000,none
