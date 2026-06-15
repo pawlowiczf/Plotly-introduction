@@ -17,3 +17,4 @@ torch==2.5.1+cpu
 tqdm
 umap-learn
 vaderSentiment
+nbformat>=4.2.0
